@@ -1,0 +1,62 @@
+variable "region" {
+  type        = string
+  description = "The AWS region where the resources will be created."
+  default     = "us-east-1"
+}
+
+variable "ami_id" {
+  type        = string
+  description = "The AMI ID to use for the EC2 instance."
+  default     = "ami"
+}
+
+variable "instance_type" {
+  type        = string
+  description = "The EC2 instance type to use."
+  default     = "t2.micro"
+}
+
+variable "key_name" {
+  type        = string
+  description = "The name of the key pair to use for SSH access."
+}
+
+variable "user_data" {
+  type        = string
+  description = "The user data script to run on the EC2 instance."
+}
+
+variable "db_allocated_storage" {
+  type        = number
+  description = "The amount of storage to allocate for the RDS instance."
+  default     = 20
+}
+
+variable "db_engine" {
+  type        = string
+  description = "The database engine to use for the RDS instance."
+  default     = "mysql"
+}
+
+variable "db_engine_version" {
+  type        = string
+  description = "The version of the database engine to use for the RDS instance."
+  default     = "5.7.31"
+}
+
+variable "db_instance_class" {
+  type        = string
+  description = "The RDS instance class to use."
+  default     = "db.t2.micro"
+}
+
+variable "db_name" {
+  type        = string
+  description = "The name of the database to create on the RDS instance."
+  default     = "wordpress"
+}
+
+variable "db_username" {
+  type        = string
+  description = "The username to use for the database on the RDS instance."
+  default

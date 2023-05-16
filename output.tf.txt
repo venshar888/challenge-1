@@ -1,0 +1,15 @@
+output "wordpress_instance_id" {
+  value = aws_instance.wordpress.id
+}
+
+output "wordpress_db_instance_id" {
+  value = aws_db_instance.wordpress.id
+}
+
+output "wordpress_s3_bucket_id" {
+  value = aws_s3_bucket.wordpress.id
+}
+
+output "wordpress_subnet_id" {
+  value = aws_subnet.private.id
+}
