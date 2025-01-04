@@ -3,7 +3,7 @@ Create an AWS EC2 instance for hosting the WordPress application
 Create an Amazon RDS instance for hosting the WordPress database
 Create an Amazon S3 bucket for storing the WordPress media files
 Create a security group to allow access to the EC2 instance from the internet
-Create a security group to allow access to the RDS instance from the EC2 instance
+Create a security group to allow access to the RDS instance from the EC2 instance.
 
 
 To automate the deployment of the application, I would use a configuration management tool like Ansible.
