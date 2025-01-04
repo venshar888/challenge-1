@@ -1,15 +1,4 @@
-output "wordpress_instance_id" {
-  value = aws_instance.wordpress.id
-}
+Outputs:
 
-output "wordpress_db_instance_id" {
-  value = aws_db_instance.wordpress.id
-}
-
-output "wordpress_s3_bucket_id" {
-  value = aws_s3_bucket.wordpress.id
-}
-
-output "wordpress_subnet_id" {
-  value = aws_subnet.private.id
-}
+ec2_public_ip = "54.173.113.230"
+rds_endpoint = "terraform-20241229171954359100000002.cfm8u0em8tkm.us-east-1.rds.amazonaws.com:3306"
